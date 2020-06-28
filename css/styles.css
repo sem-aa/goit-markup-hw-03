@@ -3,6 +3,13 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  
+
+  --secondary-background: #F5F4FA;
+  --footer-color: #2F303A;
+  --secondary-link: rgba(255, 255, 255, 0.6)
+
+
 }
 /* основной текст тексат #757575 */
 /* текст заголовков #212121 */
@@ -46,12 +53,12 @@ h6 {
   padding-bottom: 94px;
   padding-top: 94px;
   margin-bottom: 94px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background);
 }
 /* header */
 
 .page-header {
-  background-color: #ffffff;
+  background-color: var(--primary-white-color)
 margin-bottom: 0px;
 
 }
@@ -73,7 +80,7 @@ margin-bottom: 0px;
   color: var(--title-text-color);
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .part-logo:hover,
@@ -162,6 +169,7 @@ margin-bottom: 0px;
     color: Var(--accent-color);
   }
   
+  
 
   .site-nav .link.main {
     color: var(--accent-color);
@@ -213,7 +221,11 @@ margin-bottom: 0px;
   
   .button-filter .button {
     
-    background-color:#F5F4FA  ;
+    color: var(--title-text-color);
+    background-color:var(--secondary-background)  ;
+    border: 0px;
+    
+    
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 6px;
@@ -228,6 +240,7 @@ margin-bottom: 0px;
   }
   .button-filter .button:hover,.button-filter .button:focus {
     background-color: var(--accent-color);
+    color: var(--primary-white-color);
   }
 
   /* section */
@@ -363,7 +376,7 @@ display: flex;
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color)
  
 }
 /* footer logo */
@@ -385,13 +398,18 @@ display: flex;
   line-height: 1.71;
 }
 .adres .link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-link);
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-}
+}  
+  .adres .link:hover, .adres .link:focus
+   {
+    color: var(--accent-color)
+  }
+
 /* contact */
 
 
@@ -470,7 +488,7 @@ width: 370px  ;
 
 
 
-background: #FFFFFF;
+background: var(--primary-white-color);
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
 
